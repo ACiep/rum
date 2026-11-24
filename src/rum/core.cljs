@@ -74,7 +74,7 @@
               (this-as this
                        (vswap! (state this) call-all-2 did-mount)))))
 
-    (aset prototype "componentWillReceiveProps"
+    (aset prototype "UNSAFE_componentWillReceiveProps"
           (fn [next-props]
             (this-as this
                      (let [old-state  @(state this)
